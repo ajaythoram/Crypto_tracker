@@ -1,0 +1,68 @@
+.list_row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem;
+    padding: 0;
+    border-radius: 2rem;
+}
+.list_row:hover{
+    background-color: var(--darkgrey);
+}
+.list_row td{
+    text-align: left;
+    width: 18%;
+}
+.list_img{
+    width: 3rem !important;
+    margin-right: 2rem;
+}
+.list_img img{
+    width: 3rem !important;
+    height: 3rem !important;
+    
+}
+.td_right{
+    color: var(--grey);
+    align-items:right;
+}
+.icon{
+    height: 2rem !important;
+    width: 2rem !important;
+}
+@media screen and (max-width : 900px) {
+    .icon {
+        display: none;
+    }
+    .list_row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0.5rem;
+        margin: 0.5rem;
+        padding: 0;
+        border-radius: 2rem;
+    }
+    .total_volume{
+        display: none;
+    }
+
+}
+@media screen and (max-width : 500px) {
+     .total_market{
+        display: none;
+     }
+     .list_row{
+        font-size: 1rem;
+        gap: 0.3rem;
+        align-items: center;
+     }
+     .price_chip{
+        font-size: 0.85rem;
+     }
+     .price_flex h1{
+        font-size: 0.9rem;
+     }
+     
+}

@@ -1,0 +1,10 @@
+.select_box{
+
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0.5rem;
+    margin-left: 1.5rem;
+
+}

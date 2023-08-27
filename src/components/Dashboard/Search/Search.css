@@ -1,0 +1,36 @@
+.search_flex{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem 3rem;
+  color: var(--grey);
+  border-radius: 3rem;
+  margin : 3rem 8rem;
+  background-color: var(--darkgrey);
+}
+.search_input{
+ width: 90%;
+ background-color: var(--darkgrey);
+ outline: none;
+ border: none;
+ padding: 0.5rem 1.5rem;
+ color:var(--grey);
+font-size: 1.2rem;
+font-family: 'Inter';
+
+}
+ 
+@media screen and (max-width : 500px) {
+    
+  .search_flex{
+ margin: 1rem 1.5rem;
+ padding: 0.5rem;
+  }
+}
+@media screen and (max-width : 900px) {
+    
+  .search_flex{
+ margin: 1.5rem 2rem;
+ padding: 1rem;
+  }
+}

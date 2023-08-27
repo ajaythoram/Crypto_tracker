@@ -1,0 +1,161 @@
+.main_div{
+    padding: 0 3rem;
+    width: 700px;
+
+}
+.main_title:hover{
+  color: var(--black);
+  -webkit-text-stroke: 3px var(--white);
+  transition: 0.3s;   
+}
+.main_div h1{
+   font-size: 6.5rem;
+   margin: 0;
+}
+.main_div p{
+    font-size: 1.2rem;
+    color: gray;
+}
+.btn-div{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+.low_image{
+    display: none;
+}
+.img_logo{
+  width: 450px;
+  margin-top: 100px;
+  animation: Logo_animation 2s alternate infinite ease-in-out;
+
+}
+
+.container{
+  display: flex;
+  justify-content: space-around;
+}
+
+ /* animation */
+    @keyframes Logo_animation{
+      from{
+       transform: scale(1);
+      }
+      to{
+       transform: scale(1.1);
+      }
+    }
+    .dark{
+      background-color: white;
+      color: black;
+    }
+@media screen and (max-width : 900px) {
+       
+  .main_div{
+    padding: 0.5rem 2rem;
+    margin-top: 1rem;
+     width: 750px;
+     
+}
+.main_div h1{
+  font-size: 7rem;
+  display: flex;
+  justify-content: center;
+}
+.main_div p{
+    font-size: 3rem;
+    margin-left: 2rem;
+}
+.btn_div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_title:hover{
+    -webkit-text-stroke: 1px var(--white);
+    transition: 0.3s;   
+  }
+  .image{
+    display: none;
+  }
+  .img_phone{
+    width: 600px;
+    height: 300px;
+    margin: 1.5rem 4rem;
+    
+  }
+  .low_image{
+   padding: 1.5rem;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .btn{
+    min-width: 180px;
+    height: 30px;
+   }
+   .outlined-btn{
+     min-width: 180px;
+     height: 30px;
+   }
+   
+  
+  .low_image{
+    display: block;
+  }
+
+}
+@media screen and (max-width : 500px) {
+       
+    .main_div{
+        padding: 0.5rem 2rem;
+        margin-top: 1rem;
+         width: 350px;
+         
+    }
+    .main_div h1{
+      font-size: 3.5rem;
+    }
+    .main_div p{
+        font-size: 1.2rem;
+        margin :1rm  auto;
+    }
+    
+    .main_title:hover{
+        -webkit-text-stroke: 1px var(--white);
+        transition: 0.3s;   
+      }
+      .image{
+        display: none;
+      }
+      .img_phone{
+        width: 300px;
+        height: 200px;
+        margin-left: 1.5rem;
+        margin-top: 1.5rem;
+      }
+      .low_image{
+       padding: 1.5rem;
+      }
+      .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .btn{
+        min-width: 100px;
+       }
+       .outlined-btn{
+         min-width: 100px;
+       }
+      
+      .low_image{
+        display: block;
+      }
+
+} 
+

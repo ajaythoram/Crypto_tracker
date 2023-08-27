@@ -1,0 +1,29 @@
+import React from "react";
+import "./Back_to_top.css"
+import VerticalAlignTopIcon from '@mui/icons-material/VerticalAlignTop';
+const Back_to_top = ()=>{
+  
+    let mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+     return(
+        <div className="back_top" id="myBtn" onClick={()=>topFunction()}><VerticalAlignTopIcon /> </div>
+     )
+
+}
+export default Back_to_top;
